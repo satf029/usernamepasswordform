@@ -1,62 +1,56 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.miempresa.AppTest" time="0.038" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.miempresa.AppTest" time="0.035" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="jansi.mode" value="force"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="21.0.6+7-Ubuntu-124.04.1"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/samuel/provider/usernamepasswordform"/>
-    <property name="java.vm.vendor" value="Ubuntu"/>
-    <property name="java.vendor.url" value="https://ubuntu.com/"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="user.country" value="ES"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/samuel/provider/usernamepasswordform"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="21.0.6+7-Ubuntu-124.04.1"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
-    <property name="maven.conf" value="/usr/share/maven/conf"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="65.0"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="6.11.0-17-generic"/>
-    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
-    <property name="user.home" value="/home/samuel"/>
-    <property name="user.timezone" value="America/Asuncion"/>
-    <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="21"/>
-    <property name="user.name" value="samuel"/>
-    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/samuel/pasantia/providers/usernamepasswordform/target/test-classes:/home/samuel/pasantia/providers/usernamepasswordform/target/classes:/home/samuel/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-core/25.0.6/keycloak-core-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-common/25.0.6/keycloak-common-25.0.6.jar:/home/samuel/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.0/jackson-datatype-jdk8-2.17.0.jar:/home/samuel/.m2/repository/org/eclipse/microprofile/openapi/microprofile-openapi-api/3.1.1/microprofile-openapi-api-3.1.1.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-server-spi/25.0.6/keycloak-server-spi-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-server-spi-private/25.0.6/keycloak-server-spi-private-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-services/25.0.6/keycloak-services-25.0.6.jar:/home/samuel/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.1/jakarta.mail-api-2.1.1.jar:/home/samuel/.m2/repository/org/eclipse/angus/angus-mail/2.0.1/angus-mail-2.0.1.jar:/home/samuel/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/samuel/.m2/repository/org/twitter4j/twitter4j-core/4.1.2/twitter4j-core-4.1.2.jar:/home/samuel/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/samuel/.m2/repository/org/jboss/logging/commons-logging-jboss-logging/1.0.0.Final/commons-logging-jboss-logging-1.0.0.Final.jar:/home/samuel/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/samuel/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.0/jakarta.xml.soap-api-3.0.0.jar:/home/samuel/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20240325.1/owasp-java-html-sanitizer-20240325.1.jar:/home/samuel/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java8-shim/20240325.1/java8-shim-20240325.1.jar:/home/samuel/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java10-shim/20240325.1/java10-shim-20240325.1.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/samuel/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/samuel/.m2/repository/com/google/zxing/javase/3.4.0/javase-3.4.0.jar:/home/samuel/.m2/repository/com/google/zxing/core/3.4.0/core-3.4.0.jar:/home/samuel/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/home/samuel/.m2/repository/com/apicatalog/titanium-json-ld/1.3.3/titanium-json-ld-1.3.3.jar:/home/samuel/.m2/repository/io/setl/rdf-urdna/1.1/rdf-urdna-1.1.jar:/home/samuel/.m2/repository/com/webauthn4j/webauthn4j-core/0.21.5.RELEASE/webauthn4j-core-0.21.5.RELEASE.jar:/home/samuel/.m2/repository/com/webauthn4j/webauthn4j-util/0.21.5.RELEASE/webauthn4j-util-0.21.5.RELEASE.jar:/home/samuel/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/samuel/.m2/repository/org/apache/kerby/kerby-asn1/2.0.3/kerby-asn1-2.0.3.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.15.2/jackson-dataformat-cbor-2.15.2.jar:/home/samuel/.m2/repository/org/checkerframework/checker-qual/3.36.0/checker-qual-3.36.0.jar:/home/samuel/.m2/repository/com/github/ua-parser/uap-java/1.5.4/uap-java-1.5.4.jar:/home/samuel/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/samuel/.m2/repository/io/smallrye/common/smallrye-common-annotation/2.2.0/smallrye-common-annotation-2.2.0.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-model-storage-private/25.0.6/keycloak-model-storage-private-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-model-storage/25.0.6/keycloak-model-storage-25.0.6.jar:/home/samuel/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/samuel/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/samuel/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/samuel/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/samuel/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
-    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
-    <property name="user.language" value="es"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="21.0.6"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Ubuntu"/>
-    <property name="maven.home" value="/usr/share/maven"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2025-01-21"/>
-    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/samuel/pasantia/providers/usernamepasswordform/target/surefire/surefirebooter-20250419162450826_3.jar /home/samuel/pasantia/providers/usernamepasswordform/target/surefire 2025-04-19T16-24-50_593-jvmRun1 surefire-20250419162450826_1tmp surefire_0-20250419162450826_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/samuel/pasantia/providers/usernamepasswordform/target/test-classes:/home/samuel/pasantia/providers/usernamepasswordform/target/classes:/home/samuel/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-core/25.0.6/keycloak-core-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-common/25.0.6/keycloak-common-25.0.6.jar:/home/samuel/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.0/jackson-datatype-jdk8-2.17.0.jar:/home/samuel/.m2/repository/org/eclipse/microprofile/openapi/microprofile-openapi-api/3.1.1/microprofile-openapi-api-3.1.1.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-server-spi/25.0.6/keycloak-server-spi-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-server-spi-private/25.0.6/keycloak-server-spi-private-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-services/25.0.6/keycloak-services-25.0.6.jar:/home/samuel/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.1/jakarta.mail-api-2.1.1.jar:/home/samuel/.m2/repository/org/eclipse/angus/angus-mail/2.0.1/angus-mail-2.0.1.jar:/home/samuel/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/home/samuel/.m2/repository/org/twitter4j/twitter4j-core/4.1.2/twitter4j-core-4.1.2.jar:/home/samuel/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/samuel/.m2/repository/org/jboss/logging/commons-logging-jboss-logging/1.0.0.Final/commons-logging-jboss-logging-1.0.0.Final.jar:/home/samuel/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/samuel/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.0/jakarta.xml.soap-api-3.0.0.jar:/home/samuel/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20240325.1/owasp-java-html-sanitizer-20240325.1.jar:/home/samuel/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java8-shim/20240325.1/java8-shim-20240325.1.jar:/home/samuel/.m2/repository/com/googlecode/owasp-java-html-sanitizer/java10-shim/20240325.1/java10-shim-20240325.1.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/home/samuel/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/samuel/.m2/repository/com/google/zxing/javase/3.4.0/javase-3.4.0.jar:/home/samuel/.m2/repository/com/google/zxing/core/3.4.0/core-3.4.0.jar:/home/samuel/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar:/home/samuel/.m2/repository/com/apicatalog/titanium-json-ld/1.3.3/titanium-json-ld-1.3.3.jar:/home/samuel/.m2/repository/io/setl/rdf-urdna/1.1/rdf-urdna-1.1.jar:/home/samuel/.m2/repository/com/webauthn4j/webauthn4j-core/0.21.5.RELEASE/webauthn4j-core-0.21.5.RELEASE.jar:/home/samuel/.m2/repository/com/webauthn4j/webauthn4j-util/0.21.5.RELEASE/webauthn4j-util-0.21.5.RELEASE.jar:/home/samuel/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/samuel/.m2/repository/org/apache/kerby/kerby-asn1/2.0.3/kerby-asn1-2.0.3.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.15.2/jackson-dataformat-cbor-2.15.2.jar:/home/samuel/.m2/repository/org/checkerframework/checker-qual/3.36.0/checker-qual-3.36.0.jar:/home/samuel/.m2/repository/com/github/ua-parser/uap-java/1.5.4/uap-java-1.5.4.jar:/home/samuel/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/samuel/.m2/repository/io/smallrye/common/smallrye-common-annotation/2.2.0/smallrye-common-annotation-2.2.0.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-model-storage-private/25.0.6/keycloak-model-storage-private-25.0.6.jar:/home/samuel/.m2/repository/org/keycloak/keycloak-model-storage/25.0.6/keycloak-model-storage-25.0.6.jar:/home/samuel/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/samuel/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/samuel/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/samuel/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/samuel/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar:/home/samuel/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.1.0/jakarta.ws.rs-api-3.1.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/samuel"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/samuel/pasantia/providers/usernamepasswordform"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/samuel/pasantia/providers/usernamepasswordform/target/surefire/surefirebooter-20250419162450826_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+7-Ubuntu-122.04.1"/>
+    <property name="user.name" value="samuel"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.15.167.4-microsoft-standard-WSL2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/samuel/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="/home/samuel/pasantia/providers/usernamepasswordform"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="21.0.6+7-Ubuntu-122.04.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase classname="com.miempresa.AppTest" name="testApp" time="0.038"/>
+  <testcase name="testApp" classname="com.miempresa.AppTest" time="0.006"/>
 </testsuite>
